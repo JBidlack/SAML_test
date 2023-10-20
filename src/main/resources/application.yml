@@ -1,0 +1,26 @@
+#spring:
+#    cloud:
+#        azure:
+#            active-directory:
+#                enabled: true
+#                profile:
+#                    tenant-id: 4feb2487-79da-4ba0-8fad-f75eb358c3a4
+#                credential:
+#                    client-id: 315679eb-ce56-4549-a0cb-96596d04a1d1
+#                    client-secret: 8179bdd9-340a-414c-89ce-e869c8531afc
+#    security:
+#        saml2:
+#            relyingparty:
+#                registration:
+#                    adfs:
+#                        assertingparty:
+#                            entity-id: https://login.microsoftonline.com/4feb2487-79da-4ba0-8fad-f75eb358c3a4/saml/metadata
+#                            verification:
+#                                credentials:
+#                                    - certificate-location: "classpath:SAML.cer"
+#                                singlesignon:
+#                                    url: https://login.microsoftonline.com/4feb2487-79da-4ba0-8fad-f75eb358c3a4/saml2
+#                                    sign-request: true
+#                                singlelogout:
+#                                    url: https://login.microsoftonline.com/4feb2487-79da-4ba0-8fad-f75eb358c3a4/saml2
+#                                    sign-request: false
